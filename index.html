@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup modal</title>
+</head>
+<body>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .text-wrapper{
+            font-size: 20px;
+            height: 205px;
+            width: 50%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .button{
+            margin-top: 20px;
+            padding: 15px;
+            border:0;
+            border-radius: 50px;
+            color: #fff;
+            background-color: #000;
+            cursor:pointer;
+        }
+
+        .modal{
+            opacity: 0;
+            transition: opacity 0.2s;
+            pointer-events: none;
+        }
+
+        .open{
+            opacity: 1;
+            pointer-events: auto;
+        }
+    </style>
+
+    <div class="text-wrapper">
+        <p class="text">In the heart of a bustling city, where the sounds of traffic and the chatter of people filled the air, there existed a small park nestled between towering buildings. Within this park, under the shade of ancient oak trees, a community of dogs thrived, each with its own tale to tell.
+        At the heart of this community was Max, a wise and gentle Labrador Retriever who had called the park home for as long as he could remember. Max was revered among the dogs for his wisdom and kindness, and he often spent his days listening to the stories of his fellow companions.
+        One day, a young and energetic pup named Luna arrived at the park. With her boundless energy and playful spirit, Luna quickly became a beloved member of the community. She loved nothing more than chasing squirrels and rolling in the grass, her joy infectious to all who crossed her path.
+        As Luna grew older, she formed a special bond with Max. He became her mentor, teaching her the ways of the park and sharing his wisdom with her. Under his guidance, Luna learned the importance of loyalty, friendship, and perseverance.
+        But life in the city was not without its challenges. One day, a fierce storm swept through the park, causing chaos and destruction. The dogs huddled together, seeking shelter from the raging winds and torrential rain. In the aftermath of the storm, the park was left in ruins, and many of the dogs were injured and frightened.
+        But through it all, Max remained a source of strength and comfort for his companions. He led them in rebuilding the park, rallying them with his unwavering optimism and determination. And as the days passed, the park began to flourish once again, a testament to the resilience of the canine spirit.
+        As the seasons changed and the years passed, Max and Luna remained steadfast friends, their bond unbreakable. Together, they watched over the park and its inhabitants, their hearts filled with love and gratitude for the life they shared.
+        And so, in the heart of the city, amidst the hustle and bustle of urban life, a community of dogs thrived, bound together by the timeless values of loyalty, friendship, and love. And at the center of it all stood Max and Luna, the guardians of the park, forever united in their shared journey through life.
+        </p>
+    </div>
+    <button class="button">Read more</button>
+    <my-modal class="modal">
+        <p class="modal-text"></p>
+    </my-modal>
+    <script defer src="myModal.js"></script>
+    <script type="module" defer src="script.js"></script>
+</body>
+</html>
